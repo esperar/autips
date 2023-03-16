@@ -1,17 +1,21 @@
 package esperer.otp.principal.usecase
 
 import esperer.otp.annotation.TransactionalUseCase
+import esperer.otp.otp.Otp
 import esperer.otp.persistence.OtpRepository
 import esperer.otp.persistence.UserRepository
 import esperer.otp.principal.User
+import esperer.otp.util.GenerateCodeUtil
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.security.crypto.password.PasswordEncoder
+import java.util.Objects
 
 @TransactionalUseCase
 class UserUseCase(
     private val passwordEncoder: PasswordEncoder,
     private val userRepository: UserRepository,
-    private val otpRepository: OtpRepository
+    private val otpRepository: OtpRepository,
+    private val generateCodeUtil: GenerateCodeUtil
 ) {
 
     fun addUser(user: User) {
@@ -29,7 +33,14 @@ class UserUseCase(
     }
 
     private fun renewOtp(user: User) {
+        val code = generateCodeUtil.generateCode()
+        val otp = otpRepository.findByIdOrNull(user.username)
 
+        if(otp == null)
+            otpRepository.save(Otp(user.username, code))
+        else {
+            otp.code = code
+        }
     }
 
 }

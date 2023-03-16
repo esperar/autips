@@ -1,11 +1,13 @@
 package esperer.otp.util
 
+import org.springframework.stereotype.Component
 import java.lang.RuntimeException
 import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
 
-class GenerateCodeUtil {
 
+@Component
+class GenerateCodeUtil {
     fun generateCode(): String{
         val code: String
 

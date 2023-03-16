@@ -8,6 +8,6 @@ class Otp(
 
     @Id
     val username: String,
-    val code: String
+    var code: String
 ) {
 }
