@@ -1,6 +1,7 @@
 ### Spring security in Action
 
-> 스프링 시큐리티 인 액션 otp 인증 서비스를 코틀린으로 재구축합니다.
+> 스프링 시큐리티 인 액션 otp 인증 시스템
+> Kotlin 마이그레이션
 
 #### Spring Security Dependency
 
