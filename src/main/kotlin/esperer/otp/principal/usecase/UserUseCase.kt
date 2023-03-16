@@ -32,6 +32,15 @@ class UserUseCase(
         renewOtp(findUser)
     }
 
+    fun check(otp: Otp): Boolean {
+        val findOtp = otpRepository.findByIdOrNull(otp.username) ?: return false
+
+        if(findOtp.code == otp.code)
+            return true
+
+        return false
+    }
+
     private fun renewOtp(user: User) {
         val code = generateCodeUtil.generateCode()
         val otp = otpRepository.findByIdOrNull(user.username)
