@@ -5,7 +5,7 @@
 ### Spring Security Dependency
 
 **Maven**
-```maven
+```xml
 <dependencies>
 	<!-- ... other dependency elements ... -->
 	<dependency>
