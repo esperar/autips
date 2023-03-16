@@ -14,6 +14,7 @@ class OtpConfig {
     @Bean
     fun passwordEncoder(): PasswordEncoder = BCryptPasswordEncoder()
 
+    @Bean
     fun configure(http: HttpSecurity) {
         http.csrf()
             .disable()
