@@ -2,7 +2,7 @@
 
 > 스프링 시큐리티 인 액션 otp 인증 서비스를 코틀린으로 재구축합니다.
 
-### Spring Security Dependency
+#### Spring Security Dependency
 
 **Maven**
 ```xml
