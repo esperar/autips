@@ -1,4 +1,4 @@
-package esperer.otp.principal.usecase
+package esperer.otp.usecase
 
 import esperer.otp.annotation.TransactionalUseCase
 import esperer.otp.otp.Otp
@@ -8,7 +8,6 @@ import esperer.otp.principal.User
 import esperer.otp.util.GenerateCodeUtil
 import org.springframework.data.repository.findByIdOrNull
 import org.springframework.security.crypto.password.PasswordEncoder
-import java.util.Objects
 
 @TransactionalUseCase
 class UserUseCase(

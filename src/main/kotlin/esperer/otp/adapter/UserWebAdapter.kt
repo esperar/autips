@@ -1,7 +1,7 @@
 package esperer.otp.adapter
 
 import esperer.otp.principal.User
-import esperer.otp.principal.usecase.UserUseCase
+import esperer.otp.usecase.UserUseCase
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
