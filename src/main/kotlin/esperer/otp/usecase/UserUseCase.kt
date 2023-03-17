@@ -1,7 +1,7 @@
 package esperer.otp.usecase
 
 import esperer.otp.annotation.TransactionalUseCase
-import esperer.otp.otp.Otp
+import esperer.otp.Otp
 import esperer.otp.principal.persistence.OtpRepository
 import esperer.otp.principal.persistence.UserRepository
 import esperer.otp.principal.User

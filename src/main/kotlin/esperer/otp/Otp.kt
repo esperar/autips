@@ -1,4 +1,4 @@
-package esperer.otp.otp
+package esperer.otp
 
 import javax.persistence.Entity
 import javax.persistence.Id
