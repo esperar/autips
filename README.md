@@ -1,8 +1,9 @@
 ### Spring security in Action
 
-> 스프링 시큐리티 인 액션 otp 인증 시스템
-> Kotlin 마이그레이션
-  
+> Spring Security Otp System migrate to Kotlin
+
+
+<br>
 
 dependency
 ```gradle
@@ -21,6 +22,7 @@ dependency
 <br>
 
 **Todo**
+```
 - AuthenticationServerProxy 구축
 - Username, Otp AuthenticationProvider 생성
 - supports 관련 expression 수정
@@ -29,6 +31,9 @@ dependency
 - Jwt 파싱, Key 서명
 - user, otp usecase, persistence
 - generateCodeUtil
+```
+
+<br>
 
 [참고자료](http://www.yes24.com/Product/Goods/112200347)  
 
