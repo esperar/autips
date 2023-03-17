@@ -1,4 +1,4 @@
-package esperer.otp.config
+package esperer.otp.filter
 
 import com.sun.org.apache.xml.internal.security.utils.XMLUtils.getBytes
 import esperer.otp.OtpAuthentication
