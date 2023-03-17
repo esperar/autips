@@ -1,4 +1,4 @@
-package esperer.otp.authentication
+package esperer.otp
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.GrantedAuthority
