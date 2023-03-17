@@ -1,6 +1,5 @@
 package esperer.otp.filter
 
-import com.sun.org.apache.xml.internal.security.utils.XMLUtils.getBytes
 import esperer.otp.OtpAuthentication
 import esperer.otp.UsernamePasswordAuthentication
 import io.jsonwebtoken.Jwts
@@ -39,7 +38,7 @@ class InitialAuthenticationFilter(
             val a = manager.authenticate(auth)
 
             val key = Keys.hmacShaKeyFor(
-                signingKey.toByteArray()
+                signingKey.toByteArray(StandardCharsets.UTF_8)
             )
 
             val jwt = Jwts.builder()
