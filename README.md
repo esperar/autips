@@ -6,10 +6,6 @@
 
 dependency
 ```gradle
-<<<<<<< HEAD
-
-=======
->>>>>>> 95c3a4eebe71b32db3c5ef792f373cd1a9517bbd
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
