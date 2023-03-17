@@ -1,5 +1,7 @@
-package esperer.otp
+package esperer.otp.config
 
+import esperer.otp.OtpAuthenticationProvider
+import esperer.otp.UsernamePasswordAuthenticationProvider
 import esperer.otp.filter.InitialAuthenticationFilter
 import esperer.otp.filter.JwtAuthenticationFilter
 import org.springframework.context.annotation.Bean

@@ -1,4 +1,4 @@
-package esperer.otp
+package esperer.otp.proxy
 
 import esperer.otp.principal.User
 import org.springframework.http.HttpEntity
