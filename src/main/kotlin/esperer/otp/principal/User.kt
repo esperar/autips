@@ -11,9 +11,9 @@ class User(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val username: String,
 
-    var password: String,
+    var password: String?,
 
-    var code: String
+    var code: String?
 ) {
 
 }
