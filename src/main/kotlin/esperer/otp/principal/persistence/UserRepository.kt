@@ -1,4 +1,4 @@
-package esperer.otp.persistence
+package esperer.otp.principal.persistence
 
 import esperer.otp.principal.User
 import org.springframework.data.jpa.repository.JpaRepository

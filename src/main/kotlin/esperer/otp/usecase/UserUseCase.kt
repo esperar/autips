@@ -2,8 +2,8 @@ package esperer.otp.usecase
 
 import esperer.otp.annotation.TransactionalUseCase
 import esperer.otp.otp.Otp
-import esperer.otp.persistence.OtpRepository
-import esperer.otp.persistence.UserRepository
+import esperer.otp.principal.persistence.OtpRepository
+import esperer.otp.principal.persistence.UserRepository
 import esperer.otp.principal.User
 import esperer.otp.util.GenerateCodeUtil
 import org.springframework.data.repository.findByIdOrNull
