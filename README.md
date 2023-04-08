@@ -9,11 +9,8 @@
 SEND OTP Part
 ```kotlin
  fun sendAuth(username: String, password: String){
-
         val url = "$baseUrl/user/auth"
-
         val body = User(username, password, null)
-
         val request = HttpEntity(body)
 
         rest.postForEntity(url, request, Unit.javaClass)
@@ -21,9 +18,7 @@ SEND OTP Part
 
     fun sendOTP(username: String, code: String): Boolean{
         val url = "$baseUrl/otp/check"
-
         val body = User(username, null, code)
-
         val request = HttpEntity(body)
         val response = rest.postForEntity(url, request, Unit.javaClass)
 
