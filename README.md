@@ -44,6 +44,38 @@ override fun authenticate(authentication: Authentication?): Authentication {
     }
 ```
 
+<br>
+#### RUN EXAM
+```sh
+curl -H "username:esperer" -H "password:12345" http://localhost8080/login
+```
+
+```
+Response: {
+ Username: esperer
+ Code: xxxx
+}
+```
+
+```sh
+curl -v -H "username: esperer" -H "code:xxxx" http:/./localhost:8080/login
+```
+
+```
+Response: {
+< Http/1.1 200
+< Authorization: ey...
+}
+```
+
+```sh
+curl -H "Authorization: ey..." http:/./localhost:8080/test
+```
+
+```
+test
+```
+
 
 <br>
 
