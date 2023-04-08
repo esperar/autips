@@ -1,0 +1,3 @@
+
+
+fun mainKotlin() = "main.kt"
