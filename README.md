@@ -52,19 +52,19 @@ override fun authenticate(authentication: Authentication?): Authentication {
 
 <br>
 
-**Todo**
+
 ```
-- AuthenticationServerProxy 구축
-- Username, Otp AuthenticationProvider 생성
-- supports 관련 expression 수정
-- initialAuthentication, JwtAuthenticationFilter 재작성
+- AuthenticationServerProxy,
+- Username, Otp AuthenticationProvider
+- supports 관련 expression
+- initialAuthentication, JwtAuthenticationFilter
 - restTemplate setting
-- Jwt 파싱, Key 서명
+- Parse Jwt, Keys
 - user, otp usecase, persistence
-- generateCodeUtil
+- generateCodeUtil impl
 ```
 
 <br>
 
-[참고자료](http://www.yes24.com/Product/Goods/112200347)
-[Spring Security Docs](https://docs.spring.io/spring-security/reference/index.html)
+[reference](http://www.yes24.com/Product/Goods/112200347)
+[Security Docs](https://docs.spring.io/spring-security/reference/index.html)
