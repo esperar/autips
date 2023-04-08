@@ -45,7 +45,9 @@ override fun authenticate(authentication: Authentication?): Authentication {
 ```
 
 <br>
-#### RUN EXAM
+
+Register User
+
 ```sh
 curl -H "username:esperer" -H "password:12345" http://localhost8080/login
 ```
@@ -57,6 +59,8 @@ Response: {
 }
 ```
 
+Using Code Auth
+
 ```sh
 curl -v -H "username: esperer" -H "code:xxxx" http:/./localhost:8080/login
 ```
@@ -67,6 +71,8 @@ Response: {
 < Authorization: ey...
 }
 ```
+
+Test Feature
 
 ```sh
 curl -H "Authorization: ey..." http:/./localhost:8080/test
