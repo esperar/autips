@@ -56,7 +56,7 @@ override fun authenticate(authentication: Authentication?): Authentication {
 ```
 - AuthenticationServerProxy,
 - Username, Otp AuthenticationProvider
-- supports 관련 expression
+- supports expression -> XXXXX
 - initialAuthentication, JwtAuthenticationFilter
 - restTemplate setting
 - Parse Jwt, Keys
