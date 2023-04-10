@@ -16,14 +16,13 @@ SEND OTP Part
         rest.postForEntity(url, request, Unit.javaClass)
     }
 
-    fun sendOTP(username: String, code: String): Boolean{
+fun sendOTP(username: String, code: String): Boolean{
         val url = "$baseUrl/otp/check"
         val body = User(username, null, code)
         val request = HttpEntity(body)
         val response = rest.postForEntity(url, request, Unit.javaClass)
 
         return response.statusCode == HttpStatus.OK
-
     }
 ```
 
